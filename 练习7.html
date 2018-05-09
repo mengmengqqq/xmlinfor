@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="p1"></p>
+<ul>
+    <li id="li1"></li>
+    <li id="li2"></li>
+    <li id="li3"></li>
+</ul>
+<p id="p2"></p>
+<p id="p3"></p>
+</body>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+    function jj(){
+        $.ajax({
+            url: '练习.xml',  //提交的地址
+            type: 'post',        //提交方式
+            dataType: 'XML',     //数据的类型,XML、text，注意XML是大写的
+            error: function(){   //出现异常时调用回调函数
+                alert('无法返回正确的数据');
+            },
+            success: function(xml){
+                $("#p1").html($("title",xml).text());
+                $("#li1").html($("author1",xml).text());
+                $("#li2").html($("author2",xml).text());
+                $("#li3").html($("author3",xml).text());
+                $("#p2").html($("publishinghouse",xml).text());
+                $("#p3").html($("abstracts",xml).text());
+            }
+        });
+    }
+    jj();
+</script>
+</html>

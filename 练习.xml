@@ -1,0 +1,17 @@
+<Document>
+    <title>我是论文标题</title>
+    <BasicInformation>
+        <Authors>
+            <author1>王英俊</author1>
+            <author2>支漂亮</author2>
+            <author3>于帅逼</author3>
+        </Authors>
+        <PublishingHouse>
+            <publishinghouse>西邮学报</publishinghouse>
+        </PublishingHouse>
+        <Abstracts>
+            <abstracts>5 月 10 日中午 12 点前将答案电子版发送至 562100501@qq.com，并于 11 号晚 7 点在 fz116 面试，编程题部分完
+                成也可得分。</abstracts>
+        </Abstracts>
+    </BasicInformation>
+    </Document>
